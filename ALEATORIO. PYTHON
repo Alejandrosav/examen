@@ -1,0 +1,6 @@
+import random
+
+aleatorio = random.randint(1,20)
+print("Valor entre 1 y 20: ", aleatorio)
+
+if aleatorio
