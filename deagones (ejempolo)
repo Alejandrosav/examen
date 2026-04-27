@@ -1,0 +1,43 @@
+import random
+
+nombre = input("Ingrese su nomnbre: ")
+niveles = 
+
+seguir = "seg"
+
+while seguir == "seg":
+    puntos = 0
+    for i in range(niveles):
+        print("\nCamino", i + 1)
+        print("1. Cueva 1")
+        print("2. Cueva 2")
+
+        eleccion = intput("Elige (1 o 2): ")
+        ra = random.randint(1,2)
+
+        if ra == 1:
+            cueva1 = "amable"
+            cueva2 = "hambriento"
+        else:
+            cueva1 = "amable"
+            cueva2 = "hambriento"
+        
+        print("Entraste a la cueva", eleccion)
+        if eleccion == "1":
+            res = cueva1
+        else:
+            res = cueva2
+
+        if res == "amable":
+            print("Dragon amable")
+            puntos = puntos + 100
+            puntos = print("Puntos:", puntos)
+        else:
+           print("Dragon hambriento")
+           print(nombre, "Has perdido con", puntos, "puntos")
+           break
+    if res == "amable" and i == niveles - 1:
+        print("\Bravo!", nombre)
+        print("Ganaste con", puntos, "puntos")
+
+    seg = input("\nQuieres jugar otra vez? (si/no): ")
