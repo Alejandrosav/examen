@@ -1,0 +1,55 @@
+def funcion1():
+    print("Mi primera funcion")
+def funcion2():
+    return "Funcion 2 en Python"
+def funcion3():
+    a = 3
+    b = 7
+    return a*b
+
+funcion1()
+
+cadena = funcion2()
+print(cadena)
+
+print(funcion1())
+
+///////////////////////////////////////////// ejemplo
+
+
+def cuadrado():
+ lado = int(input("Ingresa el valor del lado: "))
+ print(f"El area del cuadrado es: {lado*lado}")
+
+def rectangulo():
+    base = int(input("Ingresa el valor de la base: "))
+    altura = int(input("Ingresa el valor de la altura: "))
+    print(f"El area del rectangulo es: {base*altura}")
+
+def triangulo():
+    base = int(input("Ingresa el valor de la base: "))
+    altura = int(input("Ingresa el valor de la altura: "))
+    print(f"El area del rectangulo es: {base*altura/2}")
+
+def circulo():
+    radio = int(input("Ingresa el valor del radio: "))
+    print(f"El area del rectangulo es: {3.1416*radio*radio}")
+
+def main():
+    print("CALCULO DE AREAS")
+    print("1. Cuadrado\n2. Rectangulo\n3. Triangulo\n4. Ciruculo")
+    opc = int(input("Elige una opcion "))
+
+    if opc == 1:
+        cuadrado()
+    elif opc == 2:
+       rectangulo()
+    elif opc == 3:
+       triangulo()
+    elif opc == 4:
+       circulo()
+    else:
+        print("Opcion incorrecta")
+
+if __name__ == "_main_": #Invocacion a la funcion main
+    main()
