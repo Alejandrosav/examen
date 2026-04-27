@@ -1,0 +1,19 @@
+#otras forma de usar for en python
+
+for i in range (11):
+    print(i, end=", ")
+
+print()
+for i in range (0,100,2):
+    print (i, end=", ")
+
+print()
+for i in ("Yucatan", "Tabasco", "CDMX"):
+    print ( i, end=", ")
+
+print()
+lista = ["OpenAI", "Grok", "Copilot", "Gemini", "Davinci"]
+for i in lista:
+    print (i, end=", ")
+
+
