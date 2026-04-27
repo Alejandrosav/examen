@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    //Declaracion de variables, algunas inicializadas
+    int mdo = 8, mdor = 0, prod;
+
+    cout << "do while Ingresa un numero : ";
+    cin >> mdo;
+
+    do {
+        mdor++;// mdor = mdor +1
+        prod = mdo * mdor;
+        cout << mdo << "*" << mdor << " = " << prod << endl;
+
+    } while (mdor <= 9);
+
+
+
+}
